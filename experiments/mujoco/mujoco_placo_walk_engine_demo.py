@@ -36,8 +36,10 @@ if args.keyboard:
     screen = pygame.display.set_mode((100, 100))
     pygame.display.set_caption("Press arrow keys to move robot")
 
-pwe = PlacoWalkEngine("../../mini_bdx/robots/bdx/robot.urdf")
-
+pwe = PlacoWalkEngine(
+    "/home/leeygang/projects/Open_Duck_Mini/mini_bdx/robots/bdx",
+    model_filename="robot.urdf",
+)
 
 model = mujoco.MjModel.from_xml_path("../../mini_bdx/robots/bdx/scene.xml")
 model.opt.timestep = 0.0001

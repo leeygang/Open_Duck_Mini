@@ -67,7 +67,7 @@ init_pos = np.array(
 #     "/home/antoine/MISC/mini_BDX/mini_bdx/robots/open_duck_mini_v2/scene_position.xml"
 # )
 model = mujoco.MjModel.from_xml_path(
-    "/home/antoine/MISC/mujoco_menagerie/open_duck_mini_v2/scene.xml"
+    "/home/leeygang/projects/Open_Duck_Mini/mini_bdx/robots/open_duck_mini_v2/scene.xml"
 )
 model.opt.timestep = 0.005
 # model.opt.timestep = 1 / 240

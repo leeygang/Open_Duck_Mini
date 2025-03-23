@@ -1,23 +1,25 @@
 from mini_bdx.placo_walk_engine.placo_walk_engine import PlacoWalkEngine
 import time
 import json
+
 import mujoco
 import mujoco.viewer
 import pickle
 from mini_bdx.utils.mujoco_utils import check_contact
 import numpy as np
 
+
 # DT = 0.01
 DT = 0.002
 decimation = 10
 pwe = PlacoWalkEngine(
-    "/home/antoine/MISC/mini_BDX/mini_bdx/robots/open_duck_mini_v2",
+    "/home/leeygang/projects/Open_Duck_Mini/mini_bdx/robots/open_duck_mini_v2",
     model_filename="robot.urdf",
     init_params=json.load(open("placo_defaults.json")),
     ignore_feet_contact=True,
 )
 model = mujoco.MjModel.from_xml_path(
-    "/home/antoine/MISC/openduckminiv2_playground/env/locomotion/open_duck_mini_v2/xmls/scene_mjx_flat_terrain.xml"
+    "/home/leeygang/projects/Open_Duck_Playground/playground/open_duck_mini_v2/xmls/scene_flat_terrain.xml"
 )
 model.opt.timestep = DT
 data = mujoco.MjData(model)
@@ -31,10 +33,10 @@ init_pos = np.array(
         -0.784,
         # 0.0,
         # 0,
-        # 0,
-        # 0,
-        # 0,
-        # 0,
+         0,
+         0,
+         0,
+         0,
         -0.003,
         -0.065,
         0.635,
@@ -68,10 +70,10 @@ with mujoco.viewer.launch_passive(
             angles = list(
                 pwe.get_angles(
                     ignore=[
-                        "neck_pitch",
-                        "head_pitch",
-                        "head_yaw",
-                        "head_roll",
+                        #"neck_pitch",
+                        #"head_pitch",
+                        #"head_yaw",
+                        #"head_roll",
                         "left_antenna",
                         "right_antenna",
                     ]
