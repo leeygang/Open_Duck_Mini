@@ -2,9 +2,9 @@
 
 <table>
   <tr>
-    <td> <img src="https://github.com/user-attachments/assets/1cec3e46-de46-4abb-9c9e-20f936f15121" alt="1" width="300px" ></td>
-    <td> <img src="https://github.com/user-attachments/assets/d2588204-32db-47c1-9ac5-2d2f71dbb98a" alt="2" width="300px" ></td>
-    <td> <img src="https://github.com/user-attachments/assets/94fbd245-655e-4465-a727-950a89ff02c2" alt="3" width="300px" ></td>
+    <td> <img src="https://github.com/user-attachments/assets/2a407765-70ad-48dd-8a5d-488f82503716" alt="1" width="300px" ></td>
+    <td> <img src="https://github.com/user-attachments/assets/3b8fe350-73a9-4c9f-ad29-efc781be7aee" alt="2" width="300px" ></td>
+    <td> <img src="https://github.com/user-attachments/assets/fd7e5949-1492-4d31-851f-feaa9b695557" alt="3" width="300px" ></td>
    </tr> 
 </table>
 
@@ -18,12 +18,16 @@ This repo is kind of a hub where we centralize all resources related to this pro
 
 The gait is getting better ! 
 
-https://github.com/user-attachments/assets/5ea58549-78dc-4448-8f86-d3e0499df830
+https://github.com/user-attachments/assets/4129974a-9d97-4651-9474-c078043bb182
 
 https://github.com/user-attachments/assets/a0afcd38-15d8-40c6-8171-a619107406b8
 
 
 # Updates
+
+> Update 02/04/2024: You can try two policies we trained : [this one](BEST_WALK_ONNX.onnx) and [this one](BEST_WALK_ONNX_2.onnx)
+> I run with the following arguments :
+> python v2_rl_walk_mujoco.py --onnx_model_path ~/BEST_WALK_ONNX_2.onnx -p 32 --commands --cutoff_frequency 40
 
 > Update 15/03/2025: join our discord server to get help or show us your duck :) https://discord.gg/UtJZsgfQGe
 
@@ -39,7 +43,7 @@ https://github.com/user-attachments/assets/a0afcd38-15d8-40c6-8171-a619107406b8
 
 https://cad.onshape.com/documents/64074dfcfa379b37d8a47762/w/3650ab4221e215a4f65eb7fe/e/0505c262d882183a25049d05
 
-See [this document](docs/prepare_robot.md) for getting from a onshape design to a simulated robot in MuJoCo
+See [this document](docs/prepare_robot.md) for getting from a onshape design to a simulated robot in MuJoCo (Warning, outdated. Has not been updated in a while)
 
 # RL stuff
 
@@ -65,7 +69,11 @@ We used Rhoban's [BAM](https://github.com/Rhoban/bam)
 
 https://docs.google.com/spreadsheets/d/1gq4iWWHEJVgAA_eemkTEsshXqrYlFxXAPwO515KpCJc/edit?usp=sharing
 
+Chinese: https://zihao-ai.feishu.cn/wiki/AfAtw69vRigXaRk5UkbcrAiLnJw?from=from_copylink
+
 # Build Guide
+
+Chinese: https://zihao-ai.feishu.cn/wiki/space/7488517034406625281
 
 ## Print Guide
 
