@@ -10,7 +10,9 @@ You will need :
 - Some wire
 - Loctite Threadlocker blue 243
 
-> General note : Everytime you screw something in the motors, you want to use a little loctite threadlocker. This will prevent the screws from coming loose due to the vibrations during the operation of the robot. It adds a little time to to the build, but you'll be glad you took the time ;)
+> General note : Everytime you screw something in the motors metal against metal, you want to use a little loctite threadlocker. This will prevent the screws from coming loose due to the vibrations during the operation of the robot. It adds a little time to to the build, but you'll be glad you took the time ;)
+>
+> Don't use loctite with the plastic screws
 
 > At any time, you can refer to the CAD here : https://cad.onshape.com/documents/64074dfcfa379b37d8a47762/w/3650ab4221e215a4f65eb7fe/e/0505c262d882183a25049d05
 
@@ -127,14 +129,7 @@ You know the drill
 
 <img src="https://github.com/user-attachments/assets/f96fe44f-a7bc-423e-a925-4aef3e7bf568" alt="1" width="500px" >
 
-### Assemble the head
-
-> TODO Update this with the new head features
-
-For reference, the inside of the head looks like this now 
-
-![image](https://github.com/user-attachments/assets/91284081-a563-4c02-bb3d-194b3afbc25c)
-
+### Assemble the head mechanism
 
 First, mount `head_pitch_to_yaw` like this 
 
@@ -167,7 +162,8 @@ TODO take a photo
 Like this 
 
 > It's actually better to mount the IMU with the correct natural orientation, which would be flipped along the X axis compared to the pictures below
-> TODO take a picture and explain better 
+> In the picture below, the IMU is mounted upside down.
+> It probably doesn't really matter a lot if you mount it upside down or not. You can configure how you mounted it later
 
 <table>
   <tr>
@@ -187,6 +183,12 @@ Here is the global electonics schematic for reference
    </tr> 
 </table>
 
+Here is how to wire the feet 
+
+![feet](https://github.com/user-attachments/assets/d3376494-4690-4484-8352-132e6284731a)
+
+
+
 ### Battery pack
 
 > To be safe, make sure your cells are charged to the same voltage before placing them in the holder.
@@ -205,8 +207,14 @@ First, insert the M3 inserts in all these holes
 
 ![image](https://github.com/user-attachments/assets/ef4cd513-6b8d-41fa-9cc3-149fc8333d3e)
 
+> TODO add instructions for expression features (camera, antennas, eye leds, projector and speaker)
 
 Then insert the bearing, mount the ear motors and the raspberry pi zero 2w.
+
+For reference, the inside of the head looks like this now 
+
+![image](https://github.com/user-attachments/assets/91284081-a563-4c02-bb3d-194b3afbc25c)
+
 
 Then assemble the neck with the head like this
 
