@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape https://cad.onshape.com/documents/ba106cac193c0e2253e1958f/w/a3692124e53d488eba5d1c10/e/415ba7354c36d812f585c332 -->
+<robot name="wild">
+  <!-- Link waist -->
+  <link name="waist">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="1e-09"/>
+      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+    </inertial>
+    <!-- Part htd_45h_1circle -->
+    <visual>
+      <origin xyz="-0.00144859 0.0594412 -0.0470715" rpy="1.57113 -1.05476e-30 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00144859 0.0594412 -0.0470715" rpy="1.57113 -1.05476e-30 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part waist_trunk_support -->
+    <visual>
+      <origin xyz="-0.000170615 -0.000326676 0.105477" rpy="0 -0 2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+      <material name="waist_trunk_support_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000170615 -0.000326676 0.105477" rpy="0 -0 2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part trunk_bottom -->
+    <visual>
+      <origin xyz="-1.74059e-05 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/trunk_bottom.stl"/>
+      </geometry>
+      <material name="trunk_bottom_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.74059e-05 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/trunk_bottom.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_2 -->
+    <visual>
+      <origin xyz="-0.0596624 0.00599697 -0.0236716" rpy="0.000328717 -0 -5.68989e-16"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0596624 0.00599697 -0.0236716" rpy="0.000328717 -0 -5.68989e-16"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part tunk_servo_connect -->
+    <visual>
+      <origin xyz="-1.74059e-05 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tunk_servo_connect.stl"/>
+      </geometry>
+      <material name="tunk_servo_connect_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.74059e-05 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/tunk_servo_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_cover -->
+    <visual>
+      <origin xyz="-0.000267406 -0.000198119 -0.0197028" rpy="0 -0 -5.68989e-16"/>
+      <geometry>
+        <mesh filename="package://assets/hip_cover.stl"/>
+      </geometry>
+      <material name="hip_cover_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000267406 -0.000198119 -0.0197028" rpy="0 -0 -5.68989e-16"/>
+      <geometry>
+        <mesh filename="package://assets/hip_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part scroll_out -->
+    <visual>
+      <origin xyz="-1.74059e-05 -0.000198119 0.105477" rpy="-1.93746e-16 -0 2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/scroll_out.stl"/>
+      </geometry>
+      <material name="scroll_out_material">
+        <color rgba="0.901961 0.878431 0.811765 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.74059e-05 -0.000198119 0.105477" rpy="-1.93746e-16 -0 2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/scroll_out.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part waist_trunk_support_2 -->
+    <visual>
+      <origin xyz="0.000135803 -0.000326676 0.105477" rpy="4.93038e-32 -4.19082e-31 -2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+      <material name="waist_trunk_support_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000135803 -0.000326676 0.105477" rpy="4.93038e-32 -4.19082e-31 -2.26893"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_trunk_connect -->
+    <visual>
+      <origin xyz="-0.000117406 -0.000198119 -0.0197028" rpy="0 -0 -5.68989e-16"/>
+      <geometry>
+        <mesh filename="package://assets/hip_trunk_connect.stl"/>
+      </geometry>
+      <material name="hip_trunk_connect_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000117406 -0.000198119 -0.0197028" rpy="0 -0 -5.68989e-16"/>
+      <geometry>
+        <mesh filename="package://assets/hip_trunk_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part waist_trunk_support_3 -->
+    <visual>
+      <origin xyz="-0.000170615 -6.95613e-05 0.105477" rpy="0 -0 0.872665"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+      <material name="waist_trunk_support_3_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000170615 -6.95613e-05 0.105477" rpy="0 -0 0.872665"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part scroll_inner -->
+    <visual>
+      <origin xyz="-0.000323824 5.89962e-05 0.105477" rpy="-1.93746e-16 6.16298e-33 -0.872665"/>
+      <geometry>
+        <mesh filename="package://assets/scroll_inner.stl"/>
+      </geometry>
+      <material name="scroll_inner_material">
+        <color rgba="0.341176 0.776471 0.741176 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000323824 5.89962e-05 0.105477" rpy="-1.93746e-16 6.16298e-33 -0.872665"/>
+      <geometry>
+        <mesh filename="package://assets/scroll_inner.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part waist_trunk_support_4 -->
+    <visual>
+      <origin xyz="0.000135803 -6.95613e-05 0.105477" rpy="0 -0 -0.872665"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+      <material name="waist_trunk_support_4_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000135803 -6.95613e-05 0.105477" rpy="0 -0 -0.872665"/>
+      <geometry>
+        <mesh filename="package://assets/waist_trunk_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_cover_2 -->
+    <visual>
+      <origin xyz="0.000232594 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/hip_cover.stl"/>
+      </geometry>
+      <material name="hip_cover_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000232594 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/hip_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_3 -->
+    <visual>
+      <origin xyz="0.00141378 -0.0598374 -0.0470715" rpy="1.57113 -4.86054e-32 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00141378 -0.0598374 -0.0470715" rpy="1.57113 -4.86054e-32 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_trunk_connect_2 -->
+    <visual>
+      <origin xyz="8.25941e-05 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/hip_trunk_connect.stl"/>
+      </geometry>
+      <material name="hip_trunk_connect_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="8.25941e-05 -0.000198119 -0.0197028" rpy="0 -0 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/hip_trunk_connect.stl"/>
+      </geometry>
+    </collision>
+  </link>
+</robot>

@@ -1,0 +1,6 @@
+{
+    // Onshape URL of the assembly
+    "url": "https://cad.onshape.com/documents/ba106cac193c0e2253e1958f/w/a3692124e53d488eba5d1c10/e/415ba7354c36d812f585c332",
+    // Output format
+    "output_format": "urdf"
+}
