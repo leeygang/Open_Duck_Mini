@@ -1,5 +1,6 @@
 __pycache__/
 gym/logs/*
+.venv/
 *.pkl
 mini_bdx/mini_bdx.egg-info/*
 experiments/RL/data/*
@@ -9,3 +10,4 @@ experiments/RL/new/ppo/
 *.zip
 *.txt
 *.onnx
+

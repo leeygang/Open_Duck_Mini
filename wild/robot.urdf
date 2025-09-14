@@ -5,9 +5,9 @@
   <!-- Link waist -->
   <link name="waist">
     <inertial>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
-      <mass value="1e-09"/>
-      <inertia ixx="1e-09" ixy="0" ixz="0" iyy="1e-09" iyz="0" izz="1e-09"/>
+      <origin xyz="-4.83602e-05 0.00168668 -0.0137073" rpy="0 0 0"/>
+      <mass value="0.438621"/>
+      <inertia ixx="0.000697537" ixy="7.13595e-08" ixz="5.2375e-07" iyy="0.000998" iyz="-1.34536e-05" izz="0.000702073"/>
     </inertial>
     <!-- Part htd_45h_1circle -->
     <visual>
@@ -250,4 +250,1332 @@
       </geometry>
     </collision>
   </link>
+  <!-- Link chassis -->
+  <link name="chassis">
+    <inertial>
+      <origin xyz="0.00235226 0.00416672 -0.0682563" rpy="0 0 0"/>
+      <mass value="0.841214"/>
+      <inertia ixx="0.00126289" ixy="-0.000107674" ixz="2.45804e-05" iyy="0.00149567" iyz="3.30802e-05" izz="0.000913668"/>
+    </inertial>
+    <!-- Part cell -->
+    <visual>
+      <origin xyz="0.0233086 -0.211191 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+      <material name="cell_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0233086 -0.211191 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part battery_hook -->
+    <visual>
+      <origin xyz="-0.000141421 -0.0296414 0.1141" rpy="-3.12818e-20 -1.61076e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/battery_hook.stl"/>
+      </geometry>
+      <material name="battery_hook_material">
+        <color rgba="0.682353 0.333333 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 -0.0296414 0.1141" rpy="-3.12818e-20 -1.61076e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/battery_hook.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rp_assemble -->
+    <visual>
+      <origin xyz="0.00985858 0.0311486 -0.068" rpy="-1.85576e-19 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/rp_assemble.stl"/>
+      </geometry>
+      <material name="rp_assemble_material">
+        <color rgba="0.513725 0.737255 0.407843 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00985858 0.0311486 -0.068" rpy="-1.85576e-19 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/rp_assemble.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part batterybox -->
+    <visual>
+      <origin xyz="-0.000141421 0.0233586 -0.068" rpy="-3.14159 -1.61076e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/batterybox.stl"/>
+      </geometry>
+      <material name="batterybox_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 0.0233586 -0.068" rpy="-3.14159 -1.61076e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/batterybox.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bno085 -->
+    <visual>
+      <origin xyz="0.0951086 -0.000141421 -0.119" rpy="1.85559e-19 1.1236e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/bno085.stl"/>
+      </geometry>
+      <material name="bno085_material">
+        <color rgba="0.513725 0.415686 0.733333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0951086 -0.000141421 -0.119" rpy="1.85559e-19 1.1236e-16 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/bno085.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part battery_hook_2 -->
+    <visual>
+      <origin xyz="-0.000141421 -0.0296414 -0.2503" rpy="-3.14159 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/battery_hook.stl"/>
+      </geometry>
+      <material name="battery_hook_2_material">
+        <color rgba="0.682353 0.333333 0.737255 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 -0.0296414 -0.2503" rpy="-3.14159 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/battery_hook.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cell_2 -->
+    <visual>
+      <origin xyz="-0.000141421 -0.234991 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+      <material name="cell_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 -0.234991 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part pca9548a -->
+    <visual>
+      <origin xyz="-0.000141421 0.0293586 -0.175613" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/pca9548a.stl"/>
+      </geometry>
+      <material name="pca9548a_material">
+        <color rgba="0.513725 0.415686 0.733333 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 0.0293586 -0.175613" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/pca9548a.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cell_3 -->
+    <visual>
+      <origin xyz="-0.0235914 -0.234991 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+      <material name="cell_3_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0235914 -0.234991 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hiwonderboard -->
+    <visual>
+      <origin xyz="-0.0462414 0.0563586 -0.068" rpy="-1.5708 1.85559e-19 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/hiwonderboard.stl"/>
+      </geometry>
+      <material name="hiwonderboard_material">
+        <color rgba="1 0.992157 0.992157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0462414 0.0563586 -0.068" rpy="-1.5708 1.85559e-19 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/hiwonderboard.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part waist_platform -->
+    <visual>
+      <origin xyz="-0.000141421 -0.000141421 -0.0763796" rpy="3.14159 -3.40806e-17 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/waist_platform.stl"/>
+      </geometry>
+      <material name="waist_platform_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 -0.000141421 -0.0763796" rpy="3.14159 -3.40806e-17 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/waist_platform.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part waist_platform_2 -->
+    <visual>
+      <origin xyz="-0.000141421 -0.000141421 -0.0763796" rpy="3.14159 -3.40806e-17 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/waist_platform_2.stl"/>
+      </geometry>
+      <material name="waist_platform_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 -0.000141421 -0.0763796" rpy="3.14159 -3.40806e-17 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/waist_platform_2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cell_4 -->
+    <visual>
+      <origin xyz="0.0233086 -0.234991 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+      <material name="cell_4_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0233086 -0.234991 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cell_5 -->
+    <visual>
+      <origin xyz="-0.0235914 -0.211191 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+      <material name="cell_5_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0235914 -0.211191 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cell_6 -->
+    <visual>
+      <origin xyz="-0.000141421 -0.211191 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+      <material name="cell_6_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000141421 -0.211191 -0.0331" rpy="1.5708 1.61076e-16 9.992e-16"/>
+      <geometry>
+        <mesh filename="package://assets/cell.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part battery_servo_connect -->
+    <visual>
+      <origin xyz="-5.01729e-18 1.6263e-19 -0.0741796" rpy="-3.14159 -3.38638e-17 -9.45433e-23"/>
+      <geometry>
+        <mesh filename="package://assets/battery_servo_connect.stl"/>
+      </geometry>
+      <material name="battery_servo_connect_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.01729e-18 1.6263e-19 -0.0741796" rpy="-3.14159 -3.38638e-17 -9.45433e-23"/>
+      <geometry>
+        <mesh filename="package://assets/battery_servo_connect.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from waist to chassis -->
+  <joint name="waist" type="revolute">
+    <origin xyz="2.43399e-05 -0.000217894 0.0284972" rpy="3.14043 0.000826419 -9.6369e-07"/>
+    <parent link="waist"/>
+    <child link="chassis"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.5708" upper="1.5708"/>
+  </joint>
+  <!-- Link left_hip -->
+  <link name="left_hip">
+    <inertial>
+      <origin xyz="-0.00246743 -0.00911137 -0.0331054" rpy="0 0 0"/>
+      <mass value="0.0849728"/>
+      <inertia ixx="1.99834e-05" ixy="4.24701e-07" ixz="-7.51761e-07" iyy="1.93032e-05" iyz="-1.5199e-06" izz="2.44272e-05"/>
+    </inertial>
+    <!-- Part hip_servo_hook_left -->
+    <visual>
+      <origin xyz="0.0015566 -0.0335541 0.0566" rpy="1.52146 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_hook_left.stl"/>
+      </geometry>
+      <material name="hip_servo_hook_left_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0015566 -0.0335541 0.0566" rpy="1.52146 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_hook_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_4 -->
+    <visual>
+      <origin xyz="0.0255528 -0.00512741 0.0231393" rpy="3.09259 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0255528 -0.00512741 0.0231393" rpy="3.09259 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_servo_gear -->
+    <visual>
+      <origin xyz="0.0016688 -0.0337988 0.054" rpy="1.52146 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_gear.stl"/>
+      </geometry>
+      <material name="hip_servo_gear_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0016688 -0.0337988 0.054" rpy="1.52146 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_gear -->
+    <visual>
+      <origin xyz="0.0015566 -0.0335541 0.0529" rpy="1.52146 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_gear.stl"/>
+      </geometry>
+      <material name="hip_gear_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0015566 -0.0335541 0.0529" rpy="1.52146 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_gear.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link upper_leg -->
+  <link name="upper_leg">
+    <inertial>
+      <origin xyz="0.0239606 0.15748 0.0267038" rpy="0 0 0"/>
+      <mass value="0.236189"/>
+      <inertia ixx="0.000968846" ixy="-0.000124046" ixz="1.77928e-07" iyy="0.000144003" iyz="1.05923e-06" izz="0.000979524"/>
+    </inertial>
+    <!-- Part up_leg_servo_connect -->
+    <visual>
+      <origin xyz="-0.0938235 0.0149046 0.0267" rpy="1.5708 -4.1986e-17 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg_servo_connect.stl"/>
+      </geometry>
+      <material name="up_leg_servo_connect_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0938235 0.0149046 0.0267" rpy="1.5708 -4.1986e-17 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg_servo_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_left -->
+    <visual>
+      <origin xyz="-0.0936888 0.0144782 0.0266985" rpy="1.5708 -8.05249e-06 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_left.stl"/>
+      </geometry>
+      <material name="knee_ball_left_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0936888 0.0144782 0.0266985" rpy="1.5708 -8.05249e-06 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_mid -->
+    <visual>
+      <origin xyz="-0.0938549 0.0147071 0.0267" rpy="1.5708 -1.11525e-15 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_mid.stl"/>
+      </geometry>
+      <material name="knee_ball_mid_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0938549 0.0147071 0.0267" rpy="1.5708 -1.11525e-15 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_mid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part up_leg -->
+    <visual>
+      <origin xyz="-0.0938235 0.0149046 0.0267" rpy="1.5708 -1.41335e-15 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg.stl"/>
+      </geometry>
+      <material name="up_leg_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0938235 0.0149046 0.0267" rpy="1.5708 -1.41335e-15 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_5 -->
+    <visual>
+      <origin xyz="0.0562101 0.192189 -0.0329432" rpy="3.13686 -1.56996 2.99028"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_5_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0562101 0.192189 -0.0329432" rpy="3.13686 -1.56996 2.99028"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_right -->
+    <visual>
+      <origin xyz="-0.0940838 0.014541 0.0268019" rpy="1.57007 -6.54438e-05 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right.stl"/>
+      </geometry>
+      <material name="knee_ball_right_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0940838 0.014541 0.0268019" rpy="1.57007 -6.54438e-05 -0.157541"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link lower_leg -->
+  <link name="lower_leg">
+    <inertial>
+      <origin xyz="-0.000521353 -0.101401 0.0270619" rpy="0 0 0"/>
+      <mass value="0.380663"/>
+      <inertia ixx="0.00177714" ixy="1.88914e-05" ixz="3.08076e-08" iyy="0.000669986" iyz="-3.58293e-05" izz="0.00168908"/>
+    </inertial>
+    <!-- Part knee_ball_servo_connect -->
+    <visual>
+      <origin xyz="-6.20164e-17 0.192752 -0.0678" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_servo_connect.stl"/>
+      </geometry>
+      <material name="knee_ball_servo_connect_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-6.20164e-17 0.192752 -0.0678" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_servo_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part low_leg_right -->
+    <visual>
+      <origin xyz="-2.35532e-15 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_right.stl"/>
+      </geometry>
+      <material name="low_leg_right_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.35532e-15 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part low_leg_left -->
+    <visual>
+      <origin xyz="-3.52583e-16 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_left.stl"/>
+      </geometry>
+      <material name="low_leg_left_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-3.52583e-16 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_right_servo_connct -->
+    <visual>
+      <origin xyz="-2.2044e-15 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right_servo_connct.stl"/>
+      </geometry>
+      <material name="knee_ball_right_servo_connct_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.2044e-15 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right_servo_connct.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part low_leg_servo_connector -->
+    <visual>
+      <origin xyz="-2.60165e-15 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_servo_connector.stl"/>
+      </geometry>
+      <material name="low_leg_servo_connector_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.60165e-15 0.192752 -0.0677579" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_servo_connector.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_low_leg_connect -->
+    <visual>
+      <origin xyz="-4.66641e-16 0.192752 -0.0676" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_low_leg_connect.stl"/>
+      </geometry>
+      <material name="knee_ball_low_leg_connect_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.66641e-16 0.192752 -0.0676" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_low_leg_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_6 -->
+    <visual>
+      <origin xyz="0.0596393 -0.173769 0.0526109" rpy="-3.14126 -1.96712e-14 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_6_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0596393 -0.173769 0.0526109" rpy="-3.14126 -1.96712e-14 -3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link ankle -->
+  <link name="ankle">
+    <inertial>
+      <origin xyz="-0.000778386 -0.0291765 0.0259275" rpy="0 0 0"/>
+      <mass value="0.0230191"/>
+      <inertia ixx="1.34186e-05" ixy="-1.80568e-07" ixz="1.56329e-08" iyy="1.32703e-05" iyz="2.24395e-07" izz="1.41853e-05"/>
+    </inertial>
+    <!-- Part servo_bracket_btm -->
+    <visual>
+      <origin xyz="-3.05311e-16 -0.0722 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_btm.stl"/>
+      </geometry>
+      <material name="servo_bracket_btm_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-3.05311e-16 -0.0722 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_btm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_bracket_top -->
+    <visual>
+      <origin xyz="-5.55112e-17 -0.0732 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_top.stl"/>
+      </geometry>
+      <material name="servo_bracket_top_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-5.55112e-17 -0.0732 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_top.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link left_foot -->
+  <link name="left_foot">
+    <inertial>
+      <origin xyz="-0.0183724 -0.00183888 0.00908589" rpy="0 0 0"/>
+      <mass value="0.413618"/>
+      <inertia ixx="0.000964071" ixy="1.74036e-05" ixz="-2.95883e-05" iyy="0.000738741" iyz="1.47778e-05" izz="0.0003209"/>
+    </inertial>
+    <!-- Part btm_servo_support -->
+    <visual>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support.stl"/>
+      </geometry>
+      <material name="btm_servo_support_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_top_front -->
+    <visual>
+      <origin xyz="-0.0126255 0.00118539 0.025429" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_front.stl"/>
+      </geometry>
+      <material name="btm_top_front_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0126255 0.00118539 0.025429" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_front.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_7 -->
+    <visual>
+      <origin xyz="-0.0596436 -0.0062757 0.0510108" rpy="-3.1401 0.00082642 5.70609e-17"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_7_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0596436 -0.0062757 0.0510108" rpy="-3.1401 0.00082642 5.70609e-17"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_btm_back -->
+    <visual>
+      <origin xyz="-0.0125253 0.0011852 0.0255946" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_back.stl"/>
+      </geometry>
+      <material name="btm_btm_back_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0125253 0.0011852 0.0255946" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_back.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_side -->
+    <visual>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_side.stl"/>
+      </geometry>
+      <material name="foot_side_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_side.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_servo_support_side -->
+    <visual>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support_side.stl"/>
+      </geometry>
+      <material name="btm_servo_support_side_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support_side.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_main -->
+    <visual>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_main.stl"/>
+      </geometry>
+      <material name="foot_main_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0128254 0.000185294 0.0255108" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_main.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_btm_front -->
+    <visual>
+      <origin xyz="-0.0125255 0.00118539 0.0254289" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_front.stl"/>
+      </geometry>
+      <material name="btm_btm_front_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0125255 0.00118539 0.0254289" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_front.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_top_back -->
+    <visual>
+      <origin xyz="-0.0126253 0.0011852 0.0255947" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_back.stl"/>
+      </geometry>
+      <material name="btm_top_back_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0126253 0.0011852 0.0255947" rpy="1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_back.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from ankle to left_foot -->
+  <joint name="left_foot" type="revolute">
+    <origin xyz="-0.0268 -0.0594 0.0268" rpy="1.5708 -0.349066 1.5708"/>
+    <parent link="ankle"/>
+    <child link="left_foot"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="0" upper="0"/>
+  </joint>
+  <!-- Joint from lower_leg to ankle -->
+  <joint name="left_ankle" type="revolute">
+    <origin xyz="-4.74705e-05 -0.179984 0.000442075" rpy="0.00142308 0.000132648 0.523599"/>
+    <parent link="lower_leg"/>
+    <child link="ankle"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="0" upper="0"/>
+  </joint>
+  <!-- Joint from upper_leg to lower_leg -->
+  <joint name="left_knee" type="revolute">
+    <origin xyz="0.00366073 0.194183 0.0267" rpy="-0.573319 -1.57079 -2.72581"/>
+    <parent link="upper_leg"/>
+    <child link="lower_leg"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.92267e-10" upper="1.5708"/>
+  </joint>
+  <!-- Joint from left_hip to upper_leg -->
+  <joint name="left_hip" type="revolute">
+    <origin xyz="-0.0268591 -0.00149279 -0.0365475" rpy="8.076e-13 1.56997 0.0505006"/>
+    <parent link="left_hip"/>
+    <child link="upper_leg"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.889656" upper="0.506607"/>
+  </joint>
+  <!-- Joint from waist to left_hip -->
+  <joint name="left_waist_hip" type="revolute">
+    <origin xyz="0.0535826 -0.000150648 -0.0532864" rpy="-1.57196 9.6369e-07 1.57162"/>
+    <parent link="waist"/>
+    <child link="left_hip"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.572933" upper="1.52146"/>
+  </joint>
+  <!-- Link right_hip -->
+  <link name="right_hip">
+    <inertial>
+      <origin xyz="0.00208458 -0.00914794 -0.0331404" rpy="0 0 0"/>
+      <mass value="0.0849728"/>
+      <inertia ixx="1.99842e-05" ixy="-4.46001e-07" ixz="6.85175e-07" iyy="1.93381e-05" iyz="-1.53885e-06" izz="2.44227e-05"/>
+    </inertial>
+    <!-- Part htd_45h_1circle_8 -->
+    <visual>
+      <origin xyz="-0.0258547 -0.0045735 -0.0961393" rpy="3.0715 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_8_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0258547 -0.0045735 -0.0961393" rpy="3.0715 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_servo_gear_2 -->
+    <visual>
+      <origin xyz="-0.00238097 -0.0337561 0.054" rpy="1.64121 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_gear.stl"/>
+      </geometry>
+      <material name="hip_servo_gear_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00238097 -0.0337561 0.054" rpy="1.64121 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_gear.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_servo_hook_right -->
+    <visual>
+      <origin xyz="-0.00246314 -0.0334997 0.0566" rpy="1.50038 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_hook_right.stl"/>
+      </geometry>
+      <material name="hip_servo_hook_right_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00246314 -0.0334997 0.0566" rpy="1.50038 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_servo_hook_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hip_gear_2 -->
+    <visual>
+      <origin xyz="-0.00246314 -0.0334997 0.0529" rpy="1.64121 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_gear.stl"/>
+      </geometry>
+      <material name="hip_gear_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00246314 -0.0334997 0.0529" rpy="1.64121 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/hip_gear.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link upper_leg_2 -->
+  <link name="upper_leg_2">
+    <inertial>
+      <origin xyz="-0.000145579 0.159292 0.0267038" rpy="0 0 0"/>
+      <mass value="0.236189"/>
+      <inertia ixx="0.000987067" ixy="5.01529e-06" ixz="1.5594e-08" iyy="0.000125781" iyz="1.07396e-06" izz="0.000979524"/>
+    </inertial>
+    <!-- Part up_leg_servo_connect_2 -->
+    <visual>
+      <origin xyz="-0.0949985 0.000535345 0.0267" rpy="1.5708 7.14899e-16 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg_servo_connect.stl"/>
+      </geometry>
+      <material name="up_leg_servo_connect_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0949985 0.000535345 0.0267" rpy="1.5708 7.14899e-16 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg_servo_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_left_2 -->
+    <visual>
+      <origin xyz="-0.0948007 0.000134224 0.0266985" rpy="1.5708 -8.05249e-06 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_left.stl"/>
+      </geometry>
+      <material name="knee_ball_left_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0948007 0.000134224 0.0266985" rpy="1.5708 -8.05249e-06 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_mid_2 -->
+    <visual>
+      <origin xyz="-0.0949996 0.000335348 0.0267" rpy="1.5708 2.11062e-17 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_mid.stl"/>
+      </geometry>
+      <material name="knee_ball_mid_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0949996 0.000335348 0.0267" rpy="1.5708 2.11062e-17 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_mid.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part up_leg_2 -->
+    <visual>
+      <origin xyz="-0.0949985 0.000535345 0.0267" rpy="1.5708 -3.25236e-17 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg.stl"/>
+      </geometry>
+      <material name="up_leg_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0949985 0.000535345 0.0267" rpy="1.5708 -3.25236e-17 -0.00563524"/>
+      <geometry>
+        <mesh filename="package://assets/up_leg.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_9 -->
+    <visual>
+      <origin xyz="0.0264802 0.198482 -0.0329432" rpy="3.13686 -1.56996 -3.141"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_9_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0264802 0.198482 -0.0329432" rpy="3.13686 -1.56996 -3.141"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_right_2 -->
+    <visual>
+      <origin xyz="-0.0952007 0.000136515 0.0268019" rpy="1.57007 -6.54438e-05 -0.00563522"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right.stl"/>
+      </geometry>
+      <material name="knee_ball_right_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0952007 0.000136515 0.0268019" rpy="1.57007 -6.54438e-05 -0.00563522"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link lower_leg_2 -->
+  <link name="lower_leg_2">
+    <inertial>
+      <origin xyz="-0.000521353 0.101401 0.0223802" rpy="0 0 0"/>
+      <mass value="0.380663"/>
+      <inertia ixx="0.00177714" ixy="-1.88914e-05" ixz="-3.08076e-08" iyy="0.000669986" iyz="-3.58293e-05" izz="0.00168908"/>
+    </inertial>
+    <!-- Part knee_ball_servo_connect_2 -->
+    <visual>
+      <origin xyz="8.01442e-16 -0.192752 0.117242" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_servo_connect.stl"/>
+      </geometry>
+      <material name="knee_ball_servo_connect_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="8.01442e-16 -0.192752 0.117242" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_servo_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part low_leg_right_2 -->
+    <visual>
+      <origin xyz="-3.03143e-16 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_right.stl"/>
+      </geometry>
+      <material name="low_leg_right_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-3.03143e-16 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part low_leg_left_2 -->
+    <visual>
+      <origin xyz="1.1293e-15 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_left.stl"/>
+      </geometry>
+      <material name="low_leg_left_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.1293e-15 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_left.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_right_servo_connct_2 -->
+    <visual>
+      <origin xyz="4.33681e-19 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right_servo_connct.stl"/>
+      </geometry>
+      <material name="knee_ball_right_servo_connct_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="4.33681e-19 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_right_servo_connct.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part low_leg_servo_connector_2 -->
+    <visual>
+      <origin xyz="-6.21898e-16 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_servo_connector.stl"/>
+      </geometry>
+      <material name="low_leg_servo_connector_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-6.21898e-16 -0.192752 0.1172" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/low_leg_servo_connector.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part knee_ball_low_leg_connect_2 -->
+    <visual>
+      <origin xyz="1.31752e-15 -0.192752 0.117042" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_low_leg_connect.stl"/>
+      </geometry>
+      <material name="knee_ball_low_leg_connect_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.31752e-15 -0.192752 0.117042" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/knee_ball_low_leg_connect.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_10 -->
+    <visual>
+      <origin xyz="0.0596393 0.173769 -0.00316881" rpy="0.000328717 -9.54405e-18 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_10_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0596393 0.173769 -0.00316881" rpy="0.000328717 -9.54405e-18 3.14159"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link ankle_2 -->
+  <link name="ankle_2">
+    <inertial>
+      <origin xyz="-0.000778386 -0.0291765 0.0259275" rpy="0 0 0"/>
+      <mass value="0.0230191"/>
+      <inertia ixx="1.34186e-05" ixy="-1.80568e-07" ixz="1.56329e-08" iyy="1.32703e-05" iyz="2.24395e-07" izz="1.41853e-05"/>
+    </inertial>
+    <!-- Part servo_bracket_btm_2 -->
+    <visual>
+      <origin xyz="0 -0.0722 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_btm.stl"/>
+      </geometry>
+      <material name="servo_bracket_btm_2_material">
+        <color rgba="0.498039 0.498039 0.498039 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -0.0722 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_btm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part servo_bracket_top_2 -->
+    <visual>
+      <origin xyz="5.55112e-17 -0.0732 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_top.stl"/>
+      </geometry>
+      <material name="servo_bracket_top_2_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="5.55112e-17 -0.0732 0.0268" rpy="-1.5708 -1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/servo_bracket_top.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link right_foot -->
+  <link name="right_foot">
+    <inertial>
+      <origin xyz="0.0182015 0.00183892 -0.0102852" rpy="0 0 0"/>
+      <mass value="0.413618"/>
+      <inertia ixx="0.000963182" ixy="1.72998e-05" ixz="-3.02215e-05" iyy="0.00073698" iyz="1.47679e-05" izz="0.000320028"/>
+    </inertial>
+    <!-- Part foot_main_right -->
+    <visual>
+      <origin xyz="0.0127744 0.159815 -0.0265031" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_main_right.stl"/>
+      </geometry>
+      <material name="foot_main_right_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0127744 0.159815 -0.0265031" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_main_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_btm_front_2 -->
+    <visual>
+      <origin xyz="0.0124747 -0.0011852 -0.026774" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_front.stl"/>
+      </geometry>
+      <material name="btm_btm_front_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0124747 -0.0011852 -0.026774" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_front.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part foot_side_right -->
+    <visual>
+      <origin xyz="0.0127744 0.159815 -0.0265031" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_side_right.stl"/>
+      </geometry>
+      <material name="foot_side_right_material">
+        <color rgba="0.980392 0.713725 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0127744 0.159815 -0.0265031" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/foot_side_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_servo_support_right -->
+    <visual>
+      <origin xyz="0.0127744 0.159815 -0.0265031" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support_right.stl"/>
+      </geometry>
+      <material name="btm_servo_support_right_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0127744 0.159815 -0.0265031" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support_right.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_btm_back_2 -->
+    <visual>
+      <origin xyz="0.0104747 -0.0011852 -0.0267756" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_back.stl"/>
+      </geometry>
+      <material name="btm_btm_back_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0104747 -0.0011852 -0.0267756" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_btm_back.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part htd_45h_1circle_11 -->
+    <visual>
+      <origin xyz="-0.0596436 0.0062757 -0.0522108" rpy="0.00149482 -0.00082642 3.90292e-17"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+      <material name="htd_45h_1circle_11_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0596436 0.0062757 -0.0522108" rpy="0.00149482 -0.00082642 3.90292e-17"/>
+      <geometry>
+        <mesh filename="package://assets/htd_45h_1circle.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_top_back_2 -->
+    <visual>
+      <origin xyz="0.0125747 -0.0011852 -0.0267739" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_back.stl"/>
+      </geometry>
+      <material name="btm_top_back_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0125747 -0.0011852 -0.0267739" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_back.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_top_front_2 -->
+    <visual>
+      <origin xyz="0.0125747 -0.0011852 -0.0267739" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_front.stl"/>
+      </geometry>
+      <material name="btm_top_front_2_material">
+        <color rgba="0.301961 0.301961 0.301961 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0125747 -0.0011852 -0.0267739" rpy="-1.57162 -0.0011661 1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_top_front.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part btm_servo_support_side_2 -->
+    <visual>
+      <origin xyz="0.0127746 -0.000185294 -0.0266897" rpy="1.57162 0.0011661 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support_side.stl"/>
+      </geometry>
+      <material name="btm_servo_support_side_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0127746 -0.000185294 -0.0266897" rpy="1.57162 0.0011661 -1.5708"/>
+      <geometry>
+        <mesh filename="package://assets/btm_servo_support_side.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from ankle_2 to right_foot -->
+  <joint name="right_foot" type="revolute">
+    <origin xyz="-0.0268 -0.0594 0.0268" rpy="1.5708 -0.349066 -1.5708"/>
+    <parent link="ankle_2"/>
+    <child link="right_foot"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="0" upper="0"/>
+  </joint>
+  <!-- Joint from lower_leg_2 to ankle_2 -->
+  <joint name="right_ankle" type="revolute">
+    <origin xyz="-4.74705e-05 0.179984 0.049" rpy="-3.14017 -0.000132648 -0.523599"/>
+    <parent link="lower_leg_2"/>
+    <child link="ankle_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.0472" upper="1.11022e-16"/>
+  </joint>
+  <!-- Joint from upper_leg_2 to lower_leg_2 -->
+  <joint name="right_knee" type="revolute">
+    <origin xyz="0.022434 0.192305 0.0266985" rpy="3.05759 -1.56996 -3.06206"/>
+    <parent link="upper_leg_2"/>
+    <child link="lower_leg_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.57073" upper="6.60353e-05"/>
+  </joint>
+  <!-- Joint from right_hip to upper_leg_2 -->
+  <joint name="right_hip" type="revolute">
+    <origin xyz="0.0266221 -0.00204462 -0.0364525" rpy="-3.14159 -1.56997 3.07001"/>
+    <parent link="right_hip"/>
+    <child link="upper_leg_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-0.343431" upper="1.05283"/>
+  </joint>
+  <!-- Joint from waist to right_hip -->
+  <joint name="right_waist_hip" type="revolute">
+    <origin xyz="-0.0536174 -0.000245589 -0.0532864" rpy="-1.57196 9.6369e-07 -1.56997"/>
+    <parent link="waist"/>
+    <child link="right_hip"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-1.50038" upper="0.594017"/>
+  </joint>
 </robot>
